@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hotel-Reservation-System</h1>
+<h1>Hotel Reservation System</h1>
 <pre>
 The program allows the user to make reservations and manage bookings
 
