@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+h1 {
+	font-size: 18px;
+	color: #3399ff;
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+h2 {
+	font-size: 40px;
+	color: #336699;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<body>
+<table width="1180" border="0">
+  <tr>
+    <th scope="row"><h1><u>Booking Table Normalisation</u></h1></th>
+  </tr>
+</table>
+<table width="1180" border="0">
+  <tr>
+    <th scope="row"><img src="Resources/Normal (1).jpg" width="769" height="1071" /></th>
+  </tr>
+</table>
+<table width="1180" border="0">
+  <tr>
+    <th scope="row"><h1>The above figure shows the normalisation of the Booking  Table. Up to 3 normalisation forms are produced. I have taken all the attributes  that are related to bookings and input them into the un-normalised form.  Within these attributes there are repeating  and un-repeating data. The repeating data are as following,  </h1>
+      <ul>
+        <li>
+          <h1>BookingID</h1>
+        </li>
+        <li>
+          <h1>GuestID</h1>
+        </li>
+        <li>
+          <h1>RoomID</h1>
+        </li>
+        <li>
+          <h1>ExtraChargeID</h1>
+        </li>
+      </ul>
+      <h1>In the 1st normalisation form I have separated  the attributes that are related to Booking details, Room details and Guest  detail and entered them into the right entities. I have set &lsquo;BookingID&rsquo; as the  primary key in the <em>Booking Details Table</em>,  &lsquo;RoomID&rsquo; as the primary key in the <em>Room  Details Table</em> and &lsquo;GuestID&rsquo; as the primary key in the <em>Guest Details Table</em>. <br />
+      </h1>
+      <h1>As you can see that in the above figure the attributes that  are coloured in red are shown as the primary key in that particular table. <br />
+      </h1>
+      <h1>In the 2nd normalisation form I have looked  closely into the Room Details Table and separated the attributes that are  related to Extra charge details and entered them into the right entity. The &lsquo;ExtraChargeID&rsquo;  is taken from the <em>Booking Details Table</em> and I have set the &lsquo;ExtraChargeID&rsquo; as the primary key.  <br />
+      </h1>
+      <h1>3rd normalisation form, by analysing the tables I  have found that the attributes related to booking cancelation details can be  separated from the <em>Booking Details Table</em>.  So I have taken the attributes and entered them into the right entity. I have  set the &lsquo;BookingCancelationID&rsquo; as the primary key.  <br />
+    </h1>
+    <h1>You can see that all the attributes are separated into their  right entities and under one unique primary key. </h1></th>
+  </tr>
+</table>
+<table width="1180" border="0">
+  <tr>
+    <th scope="row"><h1><u>Payment Table Normalisation</u></h1></th>
+  </tr>
+</table>
+<table width="1180" border="0">
+  <tr>
+    <th scope="row"><img src="Resources/Normal (2).jpg" width="772" height="1244" /></th>
+  </tr>
+  <tr>
+    <th scope="row"><h1>The above figure shows the normalisation of the Payment  Table. Up to 3 normalisation forms are produced. I have taken all the  attributes that are related to payments and input into the un-normalised  form.  Within these attributes there are  repeating and un-repeating data. The repeating data are as following,  </h1>
+      <ul>
+        <li>
+          <h1>BookingID</h1>
+        </li>
+        <li>
+          <h1>GuestID</h1>
+        </li>
+        <li>
+          <h1>RoomID</h1>
+        </li>
+        <li>
+          <h1>ExtraChargeID</h1>
+        </li>
+        <li>
+          <h1>PaymentID</h1>
+        </li>
+      </ul>
+      <h1>1st normalisation form, by analysing all the  attribute in the un-normalised form I have separated the data that are related  to Payment Details, Booking Details, Room Details and Guest detail and entered  them into their entities. By setting &lsquo;PaymentID&rsquo; as the primary key in the <em>Payment Details Table</em>, &lsquo;BookingID&rsquo; as  the primary key in the <em>Booking Details  Table</em>, &lsquo;RoomID&rsquo; as the primary key in the <em>Room Details Table</em> and &lsquo;GuestID&rsquo; as the primary key in the <em>Guest Details Table</em>.  <br />
+      </h1>
+      <h1>The Primary keys are coloured in red and can be identified  easily in the above figure.<br />
+      </h1>
+      <h1>2nd normalisation form. By looking closely into  the <em>Room Details Table,</em> I separated  the attributes that are related to Extra charge details and entered them into  their entity. I have set the &lsquo;ExtraChargeID&rsquo; as the primary key.  <br />
+      </h1>
+      <h1>Lastly 3rd normalisation form. By analysing the Payment  Details <em>Table</em> in the 2nd  normalised form, I found that there are attributes that can be taken out and entered  into a separate table. I took out the attributes &lsquo;PaymentID&rsquo;, &lsquo;BookingID&rsquo;, &lsquo;GuestID&rsquo;,  &lsquo;RoomID&rsquo;, &lsquo;ExtraChargeID&rsquo; and &lsquo;TotalCost&rsquo; and entered them into the <em>Pay Update Table</em>. I have not set a  primary key to this because this table is only used for updating. There won&rsquo;t  be any data entry. <br />
+      </h1>
+      <h1><u>The User Details Table</u><br />
+  </h1>
+    <h1>I have decided not to normalise this table because there is  no relationship forming from the <em>User  Details Table</em> with other tables. The <em>User  Details Table</em> itself is a separate and an individual table. I analysed that  this table is already in the 3rd normalised form. For this reason  only I have decided not to normalise this table. </h1></th>
+  </tr>
+  <tr>
+    <th scope="row"><h1><u>Final normalised form</u></h1></th>
+  </tr>
+  <tr>
+    <th scope="row"><p><img src="Resources/Normal (3).jpg" width="747" height="530" /></p>
+    <h1>As  you can see all the attributes are separated into suitable tables with a unique  primary key. </h1></th>
+  </tr>
+</table>
+<hr width="1180" />
+<table width="1180" border="0">
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><a href="SuccessCriteria.html"><img src="Resources/Button (2).jpg" width="86" height="40" /></a></th>
+    <th scope="row"><a href="Intro.html"><img src="Resources/Button (1).jpg" width="86" height="40" /></a></th>
+    <th scope="row">&nbsp;</th>
+  </tr>
+</table>
+</body>
+</html>
